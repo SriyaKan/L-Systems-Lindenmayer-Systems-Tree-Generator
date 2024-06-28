@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>3D L-System Tree Generator</h1>
+    <form (ngSubmit)="generateTree()">
+      <div>
+        <label for="axiom">Axiom:</label>
+        <input id="axiom" [(ngModel)]="axiom" name="axiom" required />
+      </div>
+      <div>
+        <label for="rules">Rules:</label>
+        <input id="rules" [(ngModel)]="rules" name="rules" required />
+      </div>
+      <div>
+        <label for="iterations">Iterations:</label>
+        <input id="iterations" type="number" [(ngModel)]="iterations" name="iterations" required />
+      </div>
+      <div>
+        <label for="angle">Angle:</label>
+        <input id="angle" type="number" [(ngModel)]="angle" name="angle" required />
+      </div>
+      <button type="submit">Generate Tree</button>
+    </form>
+    <div id="treeContainer"></div>
+  </div>
+  
